@@ -1,0 +1,49 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --ca-primary: #FFC208;
+    --ca-secondary: #1886E4;
+    --ca-tertiary: #3D3D44;
+}
+/* Import Microsoft Selawik Font Variants */
+@font-face {
+    font-family: 'selawik';
+	src: url("/fonts/selawik-light.ttf") format('truetype'), local('selawik');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'selawik';
+	src: url("/fonts/selawik-semilight.ttf") format('truetype'), local('selawik');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'selawik';
+    src: url("/fonts/selawik.ttf") format('truetype'), local('selawik');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'selawik';
+	src: url("/fonts/selawik-semibold.ttf") format('truetype'), local('selawik');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'selawik';
+	src: url("/fonts/selawik-bold.ttf") format('truetype'), local('selawik');
+    font-weight: 800;
+    font-style: normal;
+}
+* {
+    font-family: 'selawik', 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, fill 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+/* Fix SVG icons size */
+svg {
+	width: 100%;
+	height: auto;
+}
